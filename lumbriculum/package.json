@@ -1,0 +1,33 @@
+{
+  "name": "lumbriculum",
+  "version": "0.0.1",
+  "description": "Helfertool für lumbricus",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingoin/lumbricus.git"
+  },
+  "keywords": [
+    "lumbricus",
+    "Wemos",
+    "ESP8266",
+    "Sensors"
+  ],
+  "author": "Pingoin",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Pingoin/lumbricus/issues"
+  },
+  "homepage": "https://github.com/Pingoin/lumbricus#readme",
+  "devDependencies": {
+    "electron": "^8.3.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.2"
+  }
+}
