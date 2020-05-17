@@ -30,7 +30,12 @@ ipcRenderer.on('settingsReply', (event, args) => {
     $('#reply').html( args);
 });
 
-
+/**
+ *Generates a Array of Bytes representing an IP from an IP String
+ *
+ * @param {string} ipString A string representing an IP like 127.0.0.1
+ * @returns {(Boolean | Number[])} An array with four numbers representing the IP like [172,0,0,1]
+ */
 function getIpFromStr(ipString: string): Boolean | Number[] {
     let arr: Number[] = [];
     let isIP: Boolean = true;
