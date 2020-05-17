@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' 'self'">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  <form id="settings">
+    <label class="h2" form="settings">Eingabe für Raumsensor</label></br>
+    <label for="ssid">SSID: </label></br>
+    <input id="ssid" value="Brokkoli_Extrem"></br>
+    <label for="pass">WiFi Passwort: </label></br>
+    <input id="pass" value="1123581321345589144233"></br>
+    <label for="host">Hostname Sensor: </label></br>
+    <input id="host" value="Raumsensor"></br>
+    <label for="ip">IP: </label></br>
+    <input id="ip" value="192.168.178.88"></br>
+    <label for="subnet">Subnetzmaske: </label></br>
+    <input id="subnet" value="255.255.255.0"></br>
+    <label for="gateway">Gateway: </label></br>
+    <input id="gateway" value="192.168.178.1"></br>
+    <label for="broker">MQTT-Broker IP: </label></br>
+    <input id="broker" value="192.168.178.111"></br>
+    <input type="button" id="sendSettings" value="Eingaben absenden">
+  </form>
+  <div id="reply"></div>
+  <script>
+    // You can also require other files to run in this process
+    require('../dist/renderer.js')
+  </script>
+</body>
+
+</html>

@@ -25,7 +25,12 @@
     "url": "https://github.com/Pingoin/lumbricus/issues"
   },
   "homepage": "https://github.com/Pingoin/lumbricus#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
   "devDependencies": {
+    "@types/jquery": "^3.3.38",
+    "@types/node": "^12.12.39",
     "electron": "^8.3.0",
     "tslint": "^6.1.2",
     "typescript": "^3.9.2"
